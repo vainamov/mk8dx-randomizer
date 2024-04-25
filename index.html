@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MK8DX Randomizer</title>
+    <link href="favicon.svg" rel="icon">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="controls">
+      <section class="modifiers">
+        <label>
+          <input rk-modifier="excludeTour" type="checkbox" /> Keine Tour-Strecken
+        </label>
+      </section>
+
+      <button class="button" rk-set-tracks="4" type="button">4</button>
+      <button class="button" rk-set-tracks="6" type="button">6</button>
+      <button class="button" rk-add-track type="button">+</button>
+      <button class="button" rk-reroll type="button">Reroll</button>
+    </header>
+
+    <ol class="tracks" rk-tracks-slot>
+    </ol>
+  </body>
+
+  <script src="script.js" type="module"></script>
+
+</html>
